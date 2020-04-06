@@ -5,7 +5,7 @@ This is a customized version of the original [UnrealCV project](https://unrealcv
 The code is tested and built with Unreal Game Engine 4.22.3 and Visual studio community 2017 in Windows 10.
 
 * Download/Purchase UE4 Scene Model from Unreal Game Engine Market Place
-    * An example model and detailed instruction from Carla simulator can be found from [CarlaRS](https://github.com/ethliup/CarlaRS)
+    * An example model and detailed instruction from Carla simulator can be found from [CarlaUE4](https://github.com/ethliup/CarlaUE4)
 * Create "Plugins" directory within the project root directory
 * GoTo "Plugins/" directory, do "git clone https://github.com/ethliup/UnrealCV"
 * Open \*.uproject, UnrealCV will be promopted to ask for compilation. Choose to build it.
