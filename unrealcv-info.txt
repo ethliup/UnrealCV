@@ -1,0 +1,3 @@
+{
+    "plugin_version": "50e2582"
+}
