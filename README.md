@@ -1,11 +1,13 @@
-# unrealcv
+# UnrealCV
+This is a customized version of the original [UnrealCV project](https://unrealcv.org).
 
-We use Unreal Game Engine 4.22.3
+## Settings
+The code is tested and built with Unreal Game Engine 4.22.3 and Visual studio community 2017 in Windows 10.
 
-## Build
 * Download/Purchase UE4 Scene Model from Unreal Game Engine Market Place
+    * An example model and detailed instruction from Carla simulator can be found from [CarlaRS](https://github.com/ethliup/CarlaRS)
 * Create "Plugins" directory within the project root directory
-* GoTo "Plugins/" directory, do "git clone https://gitlab.inf.ethz.ch/liup/unrealcv.git"
+* GoTo "Plugins/" directory, do "git clone https://github.com/ethliup/UnrealCV"
 * Open \*.uproject, UnrealCV will be promopted to ask for compilation. Choose to build it.
 
 ## Set-up Game Mode
@@ -23,17 +25,9 @@ We use Unreal Game Engine 4.22.3
 * Add "MoveUpward", choose Q (+1) & E (-1)
 
 ## Usages
-### Sample control points for spline trajectory interpolation
-* Navigate camera to desired location
-* Type vget /pose [path2LogFile] from unreal console terminal
-* Repeat above steps for more points, sampled pose will be appended to "path2LogFile"
-### Compute inpterpolated spline trajectory based on above sampled control knots
-* Compile apps/splineInterpolation from autovision_vio https://github.com/autovision/autovision_vio
-* Follow apps/splineInterpolation/data/controlKnots_realisticRendering.txt format to config new sampled control knots log file
-* Run "splineInterpolation.exe [path2controlKnotsFile]" to generate spline trajectory
-### Render synthetic dataset based on above interpolated trajectory
-* Open Plugins/unrealcv/python/generator.py
-* Config "datasetFolder", "trajectoryFile", "translationScaleFactor", "trajectorySamplingRate", "exposureTime", "imageSamplingRate"
-* Click "Play" from UE4 editor
-* Run "python generator.py"
-* Dataset will then be created and saved to specified destination
+### Start Unreal game engine by clicking the start button from the Unreal editor
+* Render rolling shutter dataset 
+```
+cd Plugins/unrealcv/Python/
+python capture_rolling_shutter.py
+```
