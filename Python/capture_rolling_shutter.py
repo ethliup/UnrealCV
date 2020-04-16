@@ -10,7 +10,12 @@ from client import client
 from common import *
 
 # configuration
+
+# path to save rendered images
 DATASET_FOLDER  = "C:/Users/liup/Desktop/Carla_RS_dataset/Carla_town01"
+
+# path to the file, which contains the sampled positions
+PATH_TO_SAMPLED_POSITIONS = "path_to_the_sampled_positions_file"
 
 FPS=20
 RESOLUTION_H=448
@@ -176,7 +181,7 @@ def main():
     fid.close()
 
     ###### read in actor poses ######
-    path = os.path.join(DATASET_FOLDER, 'actor_global_poses.txt')
+    path = os.path.join(PATH_TO_SAMPLED_POSITIONS)
     _T_actor_global_poses = open(path).readlines()
     # T_actor_global_poses: body_to_world: qx, qy, qz, qw, tx, ty, tz
     T_actor_global_poses = []
