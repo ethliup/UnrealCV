@@ -71,3 +71,10 @@ python capture_rolling_shutter.py
 ```
 
 For your convenience, we also provide a list of sampled positions for each town. We use it to render rolling shutter images for our CVPR-2020 paper. The file can be found from "CarlaUE4/Carla_town_sampled_position.zip". Extract it and provide the absolute path to "capture_rolling_shutter.py" for data rendering.
+
+## Useful commands
+You can refer to "Source/UnrealCV/Private/UE4CVCommandHandlers.cpp" for a detailed list of commands, which might be useful for your own purpose. For example, you can navigate the camera within the Unreal Editor by using the configured keys "A,D,W,S,Q,E" for 3-axis translations and using your mouse for rotations. Once you arrived at a preferred position, you can invoke following commands to get its current precise position within the 3D model.
+```
+vget /pose
+```
+The commands can be typed in from the "World/Developer Tools/Output Log". Once you click it, there will have a Cmd terminal at the bottom of the Editor. 
