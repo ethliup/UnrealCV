@@ -1,5 +1,5 @@
 # UnrealCV
-This is a customized version of the original [UnrealCV project](https://unrealcv.org). It is used to render RGB images, depth images as well as other kind of images from an Unreal 3D model. We used it to render rolling shutter images for our "Deep Shutter Unrolling Network" paper, which will be published in CVPR 2020. If you find our code is useful, please consider citing our paper as well as the original paper describing [UnrealCV](https://unrealcv.org).
+This is a customized version of the original [UnrealCV project](https://unrealcv.org). It is used to render RGB images, depth images as well as other kind of images from an Unreal 3D model. We used it to render rolling shutter images for our [Deep Shutter Unrolling Network](https://github.com/ethliup/DeepUnrollNet) paper, which is published in CVPR 2020. If you find our code is useful, please consider citing our paper as well as the original paper describing [UnrealCV](https://unrealcv.org).
 
 ```
 @inproceedings{Liu2020CVPR,
